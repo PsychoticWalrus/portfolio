@@ -9,7 +9,7 @@
 body {
     font-family: Helvetica, sans-serif;
     backdrop-filter: blur(3px);
-    background-image: url(/p4/images/p3Background.jpg);
+    background-image: url(/images/p3Background.jpg);
     background-size: cover;
 }
 
