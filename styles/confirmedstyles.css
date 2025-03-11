@@ -1,0 +1,78 @@
+/* Reset default margin, padding, and apply box-sizing to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Helvetica, sans-serif;
+    background-image: url(images/Background.jpg);
+    background-size:auto;
+}
+
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1 {
+    font-family: Shrikhand, serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px;
+    color: #007030;
+}
+/* End of General Body Styling */
+
+/* Main Container for Content */
+.container {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+/* General Section Styling */
+section {
+    max-width: 1200px;
+    min-width: 300px;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;                /* Internal spacing */
+    border-radius: 15px;          /* Rounded corners */
+    background: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Initial shadow state */
+}
+
+/* Home Section Styling */
+section.home-section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* End of Home Section Styling */
+
+/* Footer Styling */
+footer {
+    position: relative;
+    text-align: center;
+    align-self: center;
+    color: white;
+    margin-top: 40px;
+    bottom: 20px;
+}
+/* End of Footer Styling */
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    section {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
