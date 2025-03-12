@@ -1,0 +1,154 @@
+/* Reset default margin, padding, and apply box-sizing to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Helvetica, sans-serif;
+    background-image: url(../images/p3Background.jpg);
+    background-size: auto;
+}
+
+nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    }
+    .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+    color: #0088ff;
+    }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+    position: fixed;
+    top: 70px;
+    visibility: hidden;
+    flex-direction: column;
+    background: white;
+    width: 70%;
+    height: 100vh;
+    padding: 2rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    gap: 1rem;
+    }
+    .nav-links.active {
+    right: 0;
+    }
+    .mobile-menu-btn {
+    display: block;
+    }
+    }
+
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1 {
+    font-family: Shrikhand, serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px;
+    color: #007030;
+}
+/* End of General Body Styling */
+
+/* Main Container for Content */
+.container {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+/* General Section Styling */
+section {
+    max-width: 1200px;
+    min-width: 300px;
+    margin-top: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;                /* Internal spacing */
+    border-radius: 15px;          /* Rounded corners */
+    background: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Initial shadow state */
+}
+
+/* Home Section Styling */
+section.home-section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* End of Home Section Styling */
+
+/* Footer Styling */
+footer {
+    position: relative;
+    text-align: center;
+    align-self: center;
+    color: white;
+    margin-top: 40px;
+    bottom: 20px;
+}
+/* End of Footer Styling */
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    section {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
