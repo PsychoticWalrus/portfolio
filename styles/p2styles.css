@@ -20,7 +20,6 @@ p {
 body {
     line-height: 1.6;               /* Improves text readability */
     color: #222;                    /* Default text color */
-    padding: 40px 20px;            /* Spacing around content */
     min-height: 100vh;             /* Minimum full viewport height */
     position: relative;            /* Required for pseudo-element positioning */
 }
@@ -121,6 +120,7 @@ body::before {
 header {
     width: 100%;                  /* Full width of container */
     text-align: center;           /* Centers text content */
+    margin-top: 20px;
     margin-bottom: 30px;          /* Space below header */
     padding: 30px;                /* Internal spacing */
     background: rgba(255, 255, 255, 0.5);  /* Semi-transparent background */
@@ -201,6 +201,7 @@ footer {
     width: 100%;                  /* Full width of container */
     text-align: center;           /* Centers text content */
     margin-top: 30px;             /* Space above footer */
+    margin-bottom: 20px;
     padding: 20px;                /* Internal spacing */
     background: rgba(255, 255, 255, 0.95);  /* Semi-transparent background */
     border-radius: 15px;          /* Rounded corners */
