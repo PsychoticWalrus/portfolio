@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>About Me - Jack Bowen - Portfolio</title>
+        <link rel="stylesheet" href="styles/aboutstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <a href="index.html" class="logo">Jack Bowen - Portfolio</a>
+            <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#section5">Sign Up - UO Drawing & Graphic Design Club</a>
+            <a href="about.html">About Me</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+
+        <div class="about-container">
+            <div class="about-header">
+                <h1>About Me - Jack Bowen</h1>
+            </div>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img class="profile-img" src="images/profilepic.jpeg" alt="Jack Bowen's Profile Picture">
+                </div>
+                <div class="bio">
+                    <p>Hello! My name is Jack Bowen, and I'm currently studying at the University of Oregon. I plan on graduating in 2027 with a major in accounting and a minor in art. I was born on May 4, 2004, in Dallas, Texas, and I've loved math, creating art, and learning about technology for as long as I can remember- in fact, my earliest memory is of me carefully drawing a picture of my mother while I was in preschool.</p>
+                    <p>My early childhood interests have sent me down a long and winding path that eventually made me the passionate and driven person I am today, and I have zero plans to slow down anytime soon. My main hobbies include drawing, graphic design, model kits, and video games, but I also love to read and go to the movies. Additionally, I've become much more interested in web development after taking a class for it at the University of Oregon.</p>
+                    <a class="resume-btn" href="project 2.html">My Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p> &copy; 2025 Jack Bowen. All rights reserved. </p>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('active');
+            }
+    
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.getElementById('navlinks').classList.remove('active');
+                });
+            });
+            
+        </script>
+
+    </body>
+
+</html>

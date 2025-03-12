@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Thank you!</title>
+        <link rel="stylesheet" href="styles/confirmedstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <nav class="navbar">
+            <a href="index.html" class="logo">Jack Bowen - Portfolio</a>
+            <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#section2">Gallery</a>
+            <a href="about.html">About Me</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+
+        <!--Box-->
+        <section class="home-section">
+
+            <div class="container">
+
+                    <header>
+
+                        <h1>Thank you!</h1>
+                    
+                        <p>You will receive an invite to our Discord server via email once we have verified that you are not a bot.</p>
+
+                        <p>(This is fake, you will not receive any emails.)</p>
+
+                        <form action="index.html" method="get">
+                            <input type="submit" value="Return to Homepage">
+                        </form>
+                    
+                    </header>
+
+            </div>
+
+        </section>
+
+        <!--End of Box-->
+
+        <footer>
+
+            <p> &copy; 2025 Jack Bowen. All rights reserved. </p>
+    
+        </footer>
+
+    </body>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navlinks').classList.remove('active');
+            });
+        });
+        
+    </script>
+
+  </html>  
